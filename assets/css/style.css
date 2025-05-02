@@ -1,0 +1,34 @@
+.modal-dialog {
+  max-width: 600px;
+  margin: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header {
+  background-color: #cc3333;
+  color: white;
+}
+
+#hidden-section {
+  display: none;
+}
+
+#error-alert {
+  display: none;
+}
+
+.card {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 3/3;
+}
