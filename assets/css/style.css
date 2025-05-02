@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  flex: 1;
+}
+
 .modal-dialog {
   max-width: 600px;
   margin: auto;
@@ -24,6 +34,7 @@
 
 .card {
   padding: 10px;
+  box-shadow: 10px 10px 15px 5px rgb(189, 189, 189);
 }
 
 img {

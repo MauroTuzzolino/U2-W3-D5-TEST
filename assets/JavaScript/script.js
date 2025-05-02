@@ -65,14 +65,14 @@ function createCard(product) {
   col.className = "col-md-4 mb-4";
   col.id = "card-" + product._id;
   col.innerHTML = `
-  <div class="card h-100">
+  <div class="card h-100 border-dark">
     <a href="details.html?id=${product._id}">
       <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
     </a>
     <div class="card-body">
-      <h5 class="card-title">${product.name}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">${product.brand}</h6>
-      <p class="card-text">${product.description}</p>
+      <h5 class="card-title  text-truncate">${product.name}</h5>
+      <h6 class="card-subtitle pb-2 text-muted  text-truncate">${product.brand}</h6>
+      <p class="card-text  text-truncate">${product.description}</p>
       <p class="fw-bold">€ ${product.price.toFixed(2)}</p>
       <button class="btn btn-sm btn-warning me-2" onclick='editProduct(${JSON.stringify(product)})'>Modifica</button>
       <button class="btn btn-sm btn-danger" onclick='showDeleteModal("${product._id}")'>Elimina</button>
